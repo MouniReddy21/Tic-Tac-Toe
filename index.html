@@ -15,32 +15,32 @@
   <div class="turn">
     <div class="which">Which player you want to be?</div>
     <div class="players">
-      <button id="playerx">Player X</button>
-      <button id="playero">Player O</button>
+      <button id="playerx" onclick="player_turn('playerx')">Player X</button>
+      <button id="playero" onclick="player_turn(id)">Player O</button>
     </div>
   </div>
   
   <div class="board">
     <div class="p-turn">
-      <span id="turnx">X's turn</span> :
-      <span id="turno">O's turn</span>
+      <span id="turnx" data-active="true">X's turn</span> :
+      <span id="turno" data-active="false">O's turn</span>
     </div>
-    <div class="tttboard">
-      <div class="cell">X</div>
-      <div class="cell">O</div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
+    <div class="tttboard" id="tttboard">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
     </div>
   </div>
 
   <div class="result">
-    <div class="won">Player X Won!</div>
-    <button id="replay-btn">New Game</button>
+    <div class="won"></div>
+    <button id="replay-btn" onclick="window.location.reload()">New Game</button>
   </div>
   
 </body>
