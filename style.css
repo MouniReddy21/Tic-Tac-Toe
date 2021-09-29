@@ -2,7 +2,9 @@ body{
     justify-content: center;
 }
 
-
+.hide{
+    display: none;
+}
 h1{
     text-align: center;
     color: rgb(240, 50, 16);
@@ -45,17 +47,22 @@ h1{
     transform: scale(1.1);
 }
 
-/* .board{
+.board{
     display: none;
-} */
-
-.board, .result{
     margin: auto;
     position: relative;
     text-align: center;
     width: 300px;
     margin-top: 10px;
 
+}
+.result{
+    display: none;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    margin-top: 10px;
 }
 
 

@@ -7,12 +7,15 @@
 , initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="index.js" defer></script>
+  <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
   <title>Tic-Tac-Toe</title>
 </head>
 <body>
   <h1>Tic-Tac-Toe</h1>
 
-  <div class="turn">
+  <div class="turn" id="turn">
     <div class="which">Which player you want to be?</div>
     <div class="players">
       <button id="playerx" onclick="player_turn('playerx')">Player X</button>
@@ -20,10 +23,9 @@
     </div>
   </div>
   
-  <div class="board">
+  <div class="board" id="board">
     <div class="p-turn">
-      <span id="turnx" data-active="true">X's turn</span> :
-      <span id="turno" data-active="false">O's turn</span>
+      <span id="turnx" >X's turn</span>
     </div>
     <div class="tttboard" id="tttboard">
       <div class="cell" data-cell></div>
@@ -38,7 +40,7 @@
     </div>
   </div>
 
-  <div class="result">
+  <div class="result" id="result">
     <div class="won"></div>
     <button id="replay-btn" onclick="window.location.reload()">New Game</button>
   </div>
